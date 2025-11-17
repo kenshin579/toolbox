@@ -16,14 +16,3 @@
 
 .idea/
 
-.terraform*
-terraform*
-finance-cluster-config
-.history
-
-# Helm dependency files
-charts/*/charts/
-charts/*/Chart.lock
-charts/*/*/charts/
-charts/*/*/Chart.lock
-charts/inspireme/values-override.yaml
