@@ -50,7 +50,7 @@
   - [x] Push 활성화
 
 ### 2.4 파일 커밋
-- [ ] Git add 및 commit
+- [x] Git add 및 commit
   ```bash
   git add .github/workflows/docker-build.yml docs/start/1_github_todo.md
   git commit -m "Add GitHub Actions workflow for Docker build and push"
@@ -161,7 +161,8 @@
 
 **핵심 구현** (Phase 2):
 - [x] `.github/workflows/docker-build.yml` 파일 작성 완료
-- [ ] 워크플로우 커밋 및 푸시 완료
+- [x] 워크플로우 커밋 완료 (feature 브랜치)
+- [ ] Pull Request 생성 및 머지 (수동 작업 필요)
 
 **검증** (Phase 3):
 - [ ] 테스트 태그로 워크플로우 정상 작동 확인
