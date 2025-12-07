@@ -21,3 +21,14 @@ jobs:
     with:
       version_type: ${{ inputs.version_type }}
     secrets: inherit
+
+  docker:
+    needs: release
+    if: ${{ always() && needs.release.result == 'success' }}
+    uses: kenshin579/actions/.github/workflows/docker-publish.yml@main
+    with:
+      image_name: toolbox
+      platforms: linux/amd64,linux/arm64
+    secrets:
+      DOCKER_USERNAME: ${{ secrets.DOCKER_USERNAME }}
+      DOCKER_PASSWORD: ${{ secrets.DOCKER_PASSWORD }}
